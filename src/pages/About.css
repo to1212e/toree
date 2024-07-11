@@ -1,0 +1,40 @@
+#about-info {
+    min-height: 50vh;
+    background-image: url(./img/colorful-smoke-movement-black-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: animateBg 5s linear infinite;
+}
+
+@keyframes animateBg {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+#about img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 20px 20px 20px #000;
+  transition: transform 0.5s ease;
+}
+
+#about img:hover {
+  transform: scale(1.1667); /* This scales the image from 300px to 350px (350/300 = 1.1667) */
+}
+
+#about span:hover {
+  color: #1622c9;
+  filter: drop-shadow(0 0 0.75rem purple);
+  text-shadow: 0 0 20px purple, 0 0 40px purple;
+  transition: all 0.4s ease;
+}
+
+#about span {
+  font-size: 18px;
+  text-decoration: none;
+  color: rgb(250, 249, 251);
+}
+
+

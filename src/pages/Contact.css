@@ -1,0 +1,91 @@
+/* Contact.css */
+
+#contact-info {
+    padding: 50px 0;
+  }
+  
+  
+  .contact-form .form-control {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-form .btn {
+    display: block;
+    width: 100%;
+    background-color: #0e0d0d; /* Pink color for button */
+    color: #f1f1f1;
+  }
+  
+  .social-icons a {
+    color: #f1f1f1;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: pink; /* Pink hover color for social icons */
+  }
+  
+  .social-icons .facebook:hover {
+    color: rgb(231, 84, 128); /* Adjusted hover color for Facebook */
+  }
+  
+  .social-icons .instagram:hover {
+    color: rgb(255, 127, 127); /* Adjusted hover color for Instagram */
+  }
+  
+  .social-icons .twitter:hover {
+    color: rgb(116, 190, 255); /* Adjusted hover color for Twitter */
+  }
+  
+  .social-icons .tiktok:hover {
+    color: rgb(237, 123, 193); /* Adjusted hover color for TikTok */
+  }
+  
+  .gonzaga {
+    background-image: url('./img/colorful-smoke-movement-black-background.jpg');
+    border-radius: 10px;
+    padding: 10%;
+    box-shadow: 0 0 10px rgba(10, 10, 10, 0.897);
+  }
+  
+  .text-black {
+    color: rgb(241, 238, 238); /* Ensuring text color is black */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .gonzaga {
+      padding: 5%; /* Reduced padding for smaller screens */
+    }
+  }
+  
+  
+  
+  .snowflake {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.7); /* Light white color for the snowflake */
+    border-radius: 50%; /* Makes the snowflakes round */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.3), 0 0 30px rgba(255, 255, 255, 0.2); /* Glow effect */
+    pointer-events: none; /* Ensures the snowflake does not affect user interaction with other elements */
+    animation: fall linear infinite;
+    }
+    
+    @keyframes fall {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(100vh) scale(0.5); opacity: 0; }
+    }
+    
+    .snowflake:nth-child(1) { left: 10%; animation-duration: 3s; animation-delay: 0s; }
+    .snowflake:nth-child(2) { left: 20%; animation-duration: 4s; animation-delay: 1s; }
+    .snowflake:nth-child(3) { left: 30%; animation-duration: 5s; animation-delay: 2s; }
+    .snowflake:nth-child(4) { left: 40%; animation-duration: 3.5s; animation-delay: 1.5s; }
+    .snowflake:nth-child(5) { left: 50%; animation-duration: 4.5s; animation-delay: 0.5s; }
+    .snowflake:nth-child(6) { left: 60%; animation-duration: 6s; animation-delay: 2.5s; }
+    .snowflake:nth-child(7) { left: 70%; animation-duration: 5.5s; animation-delay: 1s; }
+    .snowflake:nth-child(8) { left: 80%; animation-duration: 4s; animation-delay: 3s; }
+    .snowflake:nth-child(9) { left: 90%; animation-duration: 3.5s; animation-delay: 1.5s; }
+    .snowflake:nth-child(10) { left: 95%; animation-duration: 5s; animation-delay: 2s; }
+  
